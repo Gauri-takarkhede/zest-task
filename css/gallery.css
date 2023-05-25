@@ -1,0 +1,47 @@
+@keyframes movebanner {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2265px;
+  }
+}
+.photobanner {
+  height: 300px;
+  width: 3780px;
+  margin-bottom: 80px;
+  /*   margin-left: -2265px; */
+  animation: movebanner;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gallery #container {
+  color: #faebd7;
+  width: 100%;
+  overflow: hidden;
+  padding: 50px auto;
+  background: #000000c7;
+}
+.gallery header {
+  width: 90%;
+  margin: 40px auto;
+}
+.gallery header h1 {
+  text-align: center;
+  font-size: 60px;
+  border-bottom: solid;
+  border-color: rgb(250, 235, 215);
+  border-width: 2px;
+}
+.gallery header p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.gallery .image {
+  margin: 6px;
+  height: 260px;
+  width: auto;
+}

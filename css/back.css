@@ -1,0 +1,117 @@
+.headerness {
+  background: black;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  position: relative;
+}
+
+.headerness a {
+  color: white;
+  padding: 30px 20px 20px 20px;
+  display: block;
+  float: left;
+  font-family: "Coming Soon", cursive;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.slide {
+  position: absolute;
+  background-size: cover !important;
+  height: 100%;
+  left: 0;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.slide-one {
+  background: url(../img/mara2.jpg);
+}
+
+.slide-two {
+  background: url(../img/cyclo2.jpg);
+}
+
+.slide-three {
+  background: url(../img/parade.jpg);
+}
+
+.slide-four {
+  background: url(../img/kabaddi.jpg);
+}
+
+.slide-five {
+  background: url(../img/kho-kho.jpg);
+}
+
+.slide h2 {
+  widows: 100%;
+  text-align: center;
+  position: absolute;
+  text-transform: uppercase;
+  text-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 60px;
+  margin: 0;
+  transition: all 1s ease-in;
+  transition-delay: 1s;
+  color: white;
+  bottom: 5%;
+  right: 2%;
+  margin: auto;
+  opacity: 0;
+}
+.slide.active h2 {
+  opacity: 1;
+  bottom: 5%;
+  -webkit-animation: myfirst 2s 5s forwards; /* Safari 4+ */
+  -moz-animation: myfirst 2s 5s forwards; /* Fx 5+ */
+  -o-animation: myfirst 2s 5s forwards; /* Opera 12+ */
+  animation: myfirst 2s 5s forwards; /* IE 10+, Fx 29+ */
+  animation: myfirst 2s 5s forwards;
+}
+/*--currently will ony work in firefox--*/
+@-webkit-keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20%;
+  }
+}
+
+@-o-keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20%;
+  }
+}
